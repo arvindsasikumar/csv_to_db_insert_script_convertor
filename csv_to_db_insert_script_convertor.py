@@ -24,3 +24,6 @@ for rows in data: #construct individual lines
 
 query = query[:-2] #removing unwanted final newline and comma
 print(query)
+outF = open("insert_script_template.txt", "w")
+outF.write(query)
+outF.close()
